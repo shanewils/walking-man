@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#left-arm {
+    animation : left-arm 1s ease infinite alternate;
+    transform-origin:top -4em;
+    transform-box: fill-box;
+}
+
+@keyframes left-arm {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(45deg);
+    }
+
+}
+
+#right-arm {
+    animation : right-arm 1s ease infinite alternate;
+    transform-origin: center -4em;
+    transform-box: fill-box;
+}
+
+@keyframes right-arm {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(-60deg);
+    }
+
+}
+
+#left-leg {
+    animation : left-leg 1s ease infinite alternate;
+    transform-origin:top;
+    transform-box: fill-box;
+}
+
+@keyframes left-leg {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(-45deg);
+    }
+
+}
+
+#right-leg {
+    animation : right-leg 1s infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes right-leg {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(45deg);
+    }
+
+}
+
+#hair {
+    animation: hair 1s ease-in-out infinite alternate ;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes hair {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-5%);
+    }
+}
+
+#body{
+    animation: body 1s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes body {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(15deg);
+    }
+}
